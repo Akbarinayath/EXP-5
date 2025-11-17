@@ -1,172 +1,53 @@
-# EXP-4
-EXP. NO. 4. 		HALFWAVE  AND FULL WAVE  RECTIFIERS
+# EXP-5
+EXP. NO. 5. 		ZENER DIODE CHARACTERISTICS AND ZENER AS VOLTAGE REGULATOR
 
-AIM: To study the characteristics of half wave, full wave and bridge rectifier with and without filter and calculate the ripple factor, rectification efficiency and % regulation.
+AIM
+. To find the Zener Break down voltage regulation condition.
 
-COMPONENTS  AND  EQUIPMENT  REQUIRED:  Diodes,  Resistor,  Transformer,  Voltmeter, Ammeter, Breadboard and CRO.
+APPARATUS:
 
-THEORY: Rectifier changes ac to dc and it is an essential part of power supply. The unique property of a diode, permitting the current to flow in one direction, is utilised in rectifiers.
+S.No	Name of the Apparatus	Range	Quantity
+1	Zener Diode (IN 4735A)		1
+2	Resistors	1KΩ, 10KΩ	1
+3	Regulated Power Supply	(0-30)V DC	1
+4	Bread Board		1
+5	Digital Ammeter	(0-200)mA	1
+6	Digital Voltmeter	(0-20)V DC	1
+7	Connecting Wires	As Required	
 
-Half Wave Rectifier
+CIRCUIT DIAGRAM:
+THEORY:
+	
+A zener diode is heavily doped p-n junction diode, specially made to operate in the break down region. A p-n junction diode normally does not conduct when reverse biased. But if the reverse bias is increased, at a particular voltage it starts conducting heavily. This voltage is called Break down Voltage. High current through the diode can permanently damage the device To avoid high current, we connect a resistor in series with zener diode. Once the diode starts conducting it maintains almost constant voltage across the terminals what ever may be the current through it, i.e., it has very low dynamic resistance. It is used in voltage regulators.
 
-
-Mains power supply is applied at the primary of the step-down transformer. All the positive half cycles of the stepped down ac supply pass through the diode and all the negative half cycles get eliminated. Peak value of the output voltage is less than the peak value of the input voltage by 0.6V because of the voltage drop across the diode.
-For a half wave rectifier, Vrms = Vm/2 and Vdc = Vm/π: where Vrms = rms value of input, Vdc = Average value of input and Vm = peak value of output.
-
-
-Full Wave Rectifier
-During the positive half cycle of the transformer secondary voltage, diode     is forward biased and      is reverse biased. So a current flows through the diode     , load resistor      and upper half of the transformer  winding.  During  the  negative  half  cycle,  diode       becomes  forward  biased  and becomes reverse biased. The current then flows through the diode     , load resistor      and lower half of the transformer winding. Current flows through the load resistor in the same direction during both the half cycles. Peak value of the output voltage is less than the peak value of the input voltage by 0.6V
-because of the voltage drop across the diode.
-During the positive half cycle of the secondary voltage, diodes      and      are forward biased and diodes and      are reverse biased. Therefore, current flows through the secondary winding, diode     , load resistor
-and diode     . During the negative half cycle,      and      are forward biased and diodes      and      are reverse biased. Therefore, current flows through the secondary winding, diode     . Load resistor       During both the half cycles, the current flows through the load resistor in the same direction. Peak value of the output voltage is less than the peak value of the input voltage by 1.2V due to the voltage drop across two diodes. The ripple factor of the bridge rectifier is the same as that of full wave rectifier.
-All rectifier outputs contain considerable amount of ripple in addition to the DC component. In order to avoid AC components, a filter is connected at the output of the rectifier.
-
-Capacitor input filter, choke input filter, RC, CRC, LC, and CLC filters are the usually used filters. Capacitor input filter is the simplest and cheapest. A high value capacitor C is connected in shunt with the load resistor     . Capacitor charges to peak voltage      when the half cycle appears at the output. After the peak value is passed, the capacitor discharges through the load resistor slowly since the diode is reverse biased by the capacitor voltage. Before the capacitor voltage drops substantially, next output cycle arrives and the capacitor recharges to peak.
-
-Rectifier Efficiency
-
-Rectifier efficiency is defined as the ratio of DC output power to the input power from the AC supply. Even with ideal rectifiers with no losses, the efficiency is less than 100% because some of the output power is AC power rather than DC which manifests as ripple superimposed on the DC waveform.
 PROCEDURE:
 
-1.   Wire up the half wave rectifier circuit without capacitor after testing all the components.
+1. Connections are made as per the circuit diagram.
+2. The Regulated power supply voltage is increased in steps.
+3. The voltage across the diode (Vz.) remains almost constant although the current through the diode increases. This voltage serves as reference voltage.
+4. The zener current (lz), and the zener voltage (Vz.) are observed and then noted in the tabular form.
+4. A graph is plotted between zener current (Iz) on y-axis and zener voltage (Vz) on x-axis.
+OBSERVATIONS:
+<img width="1090" height="568" alt="image" src="https://github.com/user-attachments/assets/82927f60-a520-49d0-8db4-8bb3a27e4626" />
 
-2.   Switch on the main supply. Observe the transformer secondary voltage waveform and output voltage waveform across the load resistor, simultaneously on the CRO screen. Note down       and calculate
-3.   Connect the capacitor filter and observe the waveforms. Note down and calculate ripple factor, rectifier efficiency and %regulation using the expressions. Repeat for different capacitor values.
-4.   Repeat the above steps for full wave and bridge rectifiers.
+![image](https://github.com/user-attachments/assets/c7a4f027-8034-4c5b-981b-1a8e340accc5)
 
-CIRCUIT DIAGRAMS
+![image](https://github.com/user-attachments/assets/0c317230-0d7b-4abc-9fbf-d5efad841a48)
 
-Half wave rectifier with filter:
-<img width="1280" height="809" alt="image" src="https://github.com/user-attachments/assets/55bee84b-7e80-46be-8fa2-d871822361b8" />
+![image](https://github.com/user-attachments/assets/cab1da02-daf1-4791-be26-cdecf568904e)
 
-
-half wave rectifier without filter
-
-<img width="1280" height="807" alt="image" src="https://github.com/user-attachments/assets/65cb0579-4caa-4d3f-bb8e-de3c112ab864" />
-
-
-Bridge rectifier with filter:
-
-<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/fc90c26f-fbcb-4cfd-a62c-311286640a29" />
+![image](https://github.com/user-attachments/assets/06e44f42-4600-4748-8ee2-b86827f3305c)
 
 
-bridge rectifier without filter
-<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/3dadf99d-904e-4d80-97f8-1d6b16c8d3c7" />
+REGULATION CHARACTERISTICS:
 
+V-I & REGULATION CHARACTERISTICS:
 
+PRECAUTIONS:
 
-TABULAR COLUMN
-![image](https://github.com/user-attachments/assets/726d2064-a0ca-4a97-8f6d-8d5270abad26)
+1. While doing the experiment do not exceed the ratings of the zener diode. This may lead to damage the diode.
+2. Connect voltmeter and Ammeter in correct polarities as shown in the circuit diagram.
 
-![image](https://github.com/user-attachments/assets/f4f296cc-e823-4e4a-ad71-3181e62e7328)
-
-![image](https://github.com/user-attachments/assets/e35cae14-5453-463b-99ee-55f8c4f89f27)
-
-![image](https://github.com/user-attachments/assets/890b0325-8322-42fb-9deb-98092e09e62a)
-
-
-![image](https://github.com/user-attachments/assets/1c233c41-39ed-4e00-a925-93129035577d)
-
-![image](https://github.com/user-attachments/assets/4743b4f3-c73d-4188-9d19-da7953f001fd)
-
-![image](https://github.com/user-attachments/assets/88bbd7a1-9058-4db3-a9ae-669d976b0ad7)
-
-![image](https://github.com/user-attachments/assets/1104438e-9c01-4145-bd55-7e2bff6724b5)
-
-![image](https://github.com/user-attachments/assets/7069ff5f-6c49-4f1b-a922-449863bbf5f8)
-
-![image](https://github.com/user-attachments/assets/888433cc-943e-4fb5-9cff-b8adfd3809b3)
-
-![image](https://github.com/user-attachments/assets/0ef6d50c-5d45-4f9e-98fd-e0b466130323)
-
-
-
+3. Do not switch ON the power supply unless you have checked the circuit connections as per the circuit diagram.
 RESULT:
-
-Input and Output waveforms of a half and full bridge-wave with /without filter are observed and plotted.
-# EXP-4
-EXP. NO. 4. 		HALFWAVE  AND FULL WAVE  RECTIFIERS
-
-AIM: To study the characteristics of half wave, full wave and bridge rectifier with and without filter and calculate the ripple factor, rectification efficiency and % regulation.
-
-COMPONENTS  AND  EQUIPMENT  REQUIRED:  Diodes,  Resistor,  Transformer,  Voltmeter, Ammeter, Breadboard and CRO.
-
-THEORY: Rectifier changes ac to dc and it is an essential part of power supply. The unique property of a diode, permitting the current to flow in one direction, is utilised in rectifiers.
-
-Half Wave Rectifier
-
-
-Mains power supply is applied at the primary of the step-down transformer. All the positive half cycles of the stepped down ac supply pass through the diode and all the negative half cycles get eliminated. Peak value of the output voltage is less than the peak value of the input voltage by 0.6V because of the voltage drop across the diode.
-For a half wave rectifier, Vrms = Vm/2 and Vdc = Vm/π: where Vrms = rms value of input, Vdc = Average value of input and Vm = peak value of output.
-
-
-Full Wave Rectifier
-During the positive half cycle of the transformer secondary voltage, diode     is forward biased and      is reverse biased. So a current flows through the diode     , load resistor      and upper half of the transformer  winding.  During  the  negative  half  cycle,  diode       becomes  forward  biased  and becomes reverse biased. The current then flows through the diode     , load resistor      and lower half of the transformer winding. Current flows through the load resistor in the same direction during both the half cycles. Peak value of the output voltage is less than the peak value of the input voltage by 0.6V
-because of the voltage drop across the diode.
-During the positive half cycle of the secondary voltage, diodes      and      are forward biased and diodes and      are reverse biased. Therefore, current flows through the secondary winding, diode     , load resistor
-and diode     . During the negative half cycle,      and      are forward biased and diodes      and      are reverse biased. Therefore, current flows through the secondary winding, diode     . Load resistor       During both the half cycles, the current flows through the load resistor in the same direction. Peak value of the output voltage is less than the peak value of the input voltage by 1.2V due to the voltage drop across two diodes. The ripple factor of the bridge rectifier is the same as that of full wave rectifier.
-All rectifier outputs contain considerable amount of ripple in addition to the DC component. In order to avoid AC components, a filter is connected at the output of the rectifier.
-
-Capacitor input filter, choke input filter, RC, CRC, LC, and CLC filters are the usually used filters. Capacitor input filter is the simplest and cheapest. A high value capacitor C is connected in shunt with the load resistor     . Capacitor charges to peak voltage      when the half cycle appears at the output. After the peak value is passed, the capacitor discharges through the load resistor slowly since the diode is reverse biased by the capacitor voltage. Before the capacitor voltage drops substantially, next output cycle arrives and the capacitor recharges to peak.
-
-Rectifier Efficiency
-
-Rectifier efficiency is defined as the ratio of DC output power to the input power from the AC supply. Even with ideal rectifiers with no losses, the efficiency is less than 100% because some of the output power is AC power rather than DC which manifests as ripple superimposed on the DC waveform.
-PROCEDURE:
-
-1.   Wire up the half wave rectifier circuit without capacitor after testing all the components.
-
-2.   Switch on the main supply. Observe the transformer secondary voltage waveform and output voltage waveform across the load resistor, simultaneously on the CRO screen. Note down       and calculate
-3.   Connect the capacitor filter and observe the waveforms. Note down and calculate ripple factor, rectifier efficiency and %regulation using the expressions. Repeat for different capacitor values.
-4.   Repeat the above steps for full wave and bridge rectifiers.
-
-CIRCUIT DIAGRAMS
-
-Half wave rectifier with filter:
-<img width="1280" height="809" alt="image" src="https://github.com/user-attachments/assets/55bee84b-7e80-46be-8fa2-d871822361b8" />
-
-
-half wave rectifier without filter
-
-<img width="1280" height="807" alt="image" src="https://github.com/user-attachments/assets/65cb0579-4caa-4d3f-bb8e-de3c112ab864" />
-
-
-Bridge rectifier with filter:
-
-<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/fc90c26f-fbcb-4cfd-a62c-311286640a29" />
-
-
-bridge rectifier without filter
-<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/3dadf99d-904e-4d80-97f8-1d6b16c8d3c7" />
-
-
-
-TABULAR COLUMN
-![image](https://github.com/user-attachments/assets/726d2064-a0ca-4a97-8f6d-8d5270abad26)
-
-![image](https://github.com/user-attachments/assets/f4f296cc-e823-4e4a-ad71-3181e62e7328)
-
-![image](https://github.com/user-attachments/assets/e35cae14-5453-463b-99ee-55f8c4f89f27)
-
-![image](https://github.com/user-attachments/assets/890b0325-8322-42fb-9deb-98092e09e62a)
-
-
-![image](https://github.com/user-attachments/assets/1c233c41-39ed-4e00-a925-93129035577d)
-
-![image](https://github.com/user-attachments/assets/4743b4f3-c73d-4188-9d19-da7953f001fd)
-
-![image](https://github.com/user-attachments/assets/88bbd7a1-9058-4db3-a9ae-669d976b0ad7)
-
-![image](https://github.com/user-attachments/assets/1104438e-9c01-4145-bd55-7e2bff6724b5)
-
-![image](https://github.com/user-attachments/assets/7069ff5f-6c49-4f1b-a922-449863bbf5f8)
-
-![image](https://github.com/user-attachments/assets/888433cc-943e-4fb5-9cff-b8adfd3809b3)
-
-![image](https://github.com/user-attachments/assets/0ef6d50c-5d45-4f9e-98fd-e0b466130323)
-
-
-
-RESULT:
-
-Input and Output waveforms of a half and full bridge-wave with /without filter are observed and plotted.
+The Characteristics of Zener Break Diode Voltage Regulation from the Characteristics are Observed.
